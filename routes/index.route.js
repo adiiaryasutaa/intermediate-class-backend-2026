@@ -13,7 +13,7 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   logger.debug('GET / - Welcome route')
-  res.send('Welcome to the API Library')
+  res.send('Welcome to the API Library by Adi Aryasuta (ig: @adiiaryasutaa)')
 })
 
 router.use((req, res, next) => {

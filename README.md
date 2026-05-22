@@ -93,43 +93,43 @@ Server akan berjalan di `http://localhost:3000`
 
 - `GET /books` - List semua buku
 - `GET /books/:id` - Get detail buku
-- `POST /books` - Tambah buku baru _(Admin only)_
-- `PUT /books/:id` - Update buku _(Admin only)_
-- `DELETE /books/:id` - Hapus buku _(Admin only)_
+- `POST /books` - Tambah buku baru _(Auth required, Admin only)_
+- `PUT /books/:id` - Update buku _(Auth required, Admin only)_
+- `DELETE /books/:id` - Hapus buku _(Auth required, Admin only)_
 
 ### Categories
 
 - `GET /categories` - List semua kategori
 - `GET /categories/:id` - Get detail kategori
 - `GET /categories/:id/books` - Get buku berdasarkan kategori
-- `POST /categories` - Tambah kategori baru _(Admin only)_
-- `PUT /categories/:id` - Update kategori _(Admin only)_
-- `DELETE /categories/:id` - Hapus kategori _(Admin only)_
+- `POST /categories` - Tambah kategori baru _(Auth required, Admin only)_
+- `PUT /categories/:id` - Update kategori _(Auth required, Admin only)_
+- `DELETE /categories/:id` - Hapus kategori _(Auth required, Admin only)_
 
 ### Users
 
-- `GET /users` - List semua pengguna
-- `GET /users/:id` - Get detail pengguna
-- `GET /users/:id/profile` - Get profil pengguna
-- `POST /users` - Tambah pengguna baru
-- `PUT /users/:id` - Update pengguna
-- `DELETE /users/:id` - Hapus pengguna
+- `GET /users` - List semua pengguna _(Auth required)_
+- `GET /users/:id` - Get detail pengguna _(Auth required)_
+- `GET /users/:id/profile` - Get profil pengguna _(Auth required)_
+- `POST /users` - Tambah pengguna baru _(Auth required)_
+- `PUT /users/:id` - Update pengguna _(Auth required)_
+- `DELETE /users/:id` - Hapus pengguna _(Auth required)_
 
 ### Profiles
 
-- `GET /profiles` - List semua profil
-- `GET /profiles/:id` - Get detail profil
-- `POST /profiles` - Buat profil baru
-- `PUT /profiles/:id` - Update profil
-- `DELETE /profiles/:id` - Hapus profil
+- `GET /profiles` - List semua profil _(Auth required)_
+- `GET /profiles/:id` - Get detail profil _(Auth required)_
+- `POST /profiles` - Buat profil baru _(Auth required)_
+- `PUT /profiles/:id` - Update profil _(Auth required)_
+- `DELETE /profiles/:id` - Hapus profil _(Auth required)_
 
 ### Borrowings
 
-- `GET /borrowings` - List semua peminjaman
-- `GET /borrowings/:id` - Get detail peminjaman
-- `POST /borrowings` - Buat peminjaman baru
-- `PUT /borrowings/:id/return` - Kembalikan buku
-- `DELETE /borrowings/:id` - Hapus peminjaman
+- `GET /borrowings` - List semua peminjaman _(Auth required)_
+- `GET /borrowings/:id` - Get detail peminjaman _(Auth required)_
+- `POST /borrowings` - Buat peminjaman baru _(Auth required)_
+- `PUT /borrowings/:id/return` - Kembalikan buku _(Auth required)_
+- `DELETE /borrowings/:id` - Hapus peminjaman _(Auth required)_
 
 ## 🚢 Deployment ke Vercel
 
